@@ -13,15 +13,13 @@ const Calculate = () => {
 
   const result =
     checkIsAll &&
-    Math.floor(
-      (Number(toKg) / (Number(concentration) / 1000)) * Number(weight),
-    );
+    ((Number(toKg) / Number(concentration)) * Number(weight)).toFixed(2);
 
   return (
     <div className={styles.root}>
       <Text size="3xl">Калькулятор кол-ва раствора</Text>
       <TextField
-        label="Доза г / кг"
+        label="Доза на килограмм мг / кг"
         value={toKg}
         type="number"
         onChange={({ value }) => checkIsNumber(value) && setToKg(value)}

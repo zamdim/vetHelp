@@ -21,7 +21,7 @@ const Calculate = () => {
     <div className={styles.root}>
       <Text size="3xl">Калькулятор кол-ва раствора</Text>
       <TextField
-        label="Доза мг / кг"
+        label="Доза г / кг"
         value={toKg}
         type="number"
         onChange={({ value }) => checkIsNumber(value) && setToKg(value)}

@@ -1,2 +1,0 @@
-# vetHelp
-help to veterinary

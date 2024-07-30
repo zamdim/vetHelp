@@ -1,5 +1,4 @@
 import { toast } from 'react-toastify';
-import { TextFieldPropValue } from '@consta/uikit/TextField';
 
 export const showToastError = (msg: string) => {
   toast(msg, {
@@ -22,8 +21,4 @@ export const getQueryForFetch = (query: string | undefined) => {
     return `?${query}`;
   }
   return '';
-};
-
-export const checkIsNumber = (str: TextFieldPropValue) => {
-  return !str || (!isNaN(Number(str)) && !str.includes(' '));
 };

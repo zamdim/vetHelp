@@ -1,5 +1,5 @@
 export const enum PublicRoutesEnum {
-  CALCULATE = '/vetHelp/calculate',
+  CALCULATE = '/calculate',
 }
 
 export const enum ErrorUrlEnum {

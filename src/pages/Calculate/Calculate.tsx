@@ -5,7 +5,7 @@ import { Text } from '@consta/uikit/Text';
 const Calculate = () => {
   return (
     <div className={styles.root}>
-      <Text size="2xl">Калькулятор</Text>
+      <Text size="2xl">Калькулятор растворов</Text>
     </div>
   );
 };
